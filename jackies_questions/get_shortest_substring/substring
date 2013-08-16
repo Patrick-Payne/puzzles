@@ -1,0 +1,368 @@
+let SessionLoad = 1
+if &cp | set nocp | endif
+let s:cpo_save=&cpo
+set cpo&vim
+inoremap <silent> <S-Tab> =BackwardsSnippet()
+map! <S-Insert> <MiddleMouse>
+snoremap <silent> 	 i<Right>=TriggerSnippet()
+snoremap  b<BS>
+snoremap % b<BS>%
+snoremap ' b<BS>'
+snoremap U b<BS>U
+vmap [% [%m'gv``
+snoremap \ b<BS>\
+vmap ]% ]%m'gv``
+snoremap ^ b<BS>^
+snoremap ` b<BS>`
+vmap a% [%v]%
+nmap gx <Plug>NetrwBrowseX
+nnoremap <silent> sr :FufRenewCache
+nnoremap <silent> se :FufEditDataFile
+nnoremap <silent> sh :FufHelp
+nnoremap <silent> sy :FufLine
+nnoremap <silent> sq :FufQuickfix
+nnoremap <silent> sp :FufChangeList
+nnoremap <silent> so :FufJumpList
+nnoremap <silent> sG :FufTaggedFile!
+nnoremap <silent> sg :FufTaggedFile
+nnoremap <silent> s] :FufBufferTagAllWithCursorWord!
+vnoremap <silent> s> :FufBufferTagAllWithSelectedText
+vnoremap <silent> s. :FufBufferTagAllWithSelectedText!
+nnoremap <silent> s> :FufBufferTagAll!
+nnoremap <silent> s. :FufBufferTagAll
+nnoremap <silent> s} :FufBufferTagWithCursorWord!
+vnoremap <silent> s< :FufBufferTagWithSelectedText
+vnoremap <silent> s, :FufBufferTagWithSelectedText!
+nnoremap <silent> s< :FufBufferTag!
+nnoremap <silent> s, :FufBufferTag
+nnoremap <silent> s :FufTagWithCursorWord!
+nnoremap <silent> sT :FufTag!
+nnoremap <silent> st :FufTag
+nnoremap <silent> s	 :FufBookmarkDirAdd
+nnoremap <silent> si :FufBookmarkDir
+vnoremap <silent> s :FufBookmarkFileAddAsSelectedText
+nnoremap <silent> s :FufBookmarkFileAdd
+nnoremap <silent> su :FufBookmarkFile
+nnoremap <silent> sm :FufMruCmd
+nnoremap <silent> sN :FufMruFileInCwd
+nnoremap <silent> sn :FufMruFile
+nnoremap <silent> s :FufDir
+nnoremap <silent> sD :FufDirWithFullCwd
+nnoremap <silent> sd :FufDirWithCurrentBufferDir
+nnoremap <silent> s :FufCoverageFileRegister
+nnoremap <silent> sL :FufCoverageFileChange
+nnoremap <silent> sl :FufCoverageFileChange
+nnoremap <silent> s :FufFile
+nnoremap <silent> sK :FufFileWithFullCwd
+nnoremap <silent> sk :FufFileWithCurrentBufferDir
+nnoremap <silent> sj :FufBuffer
+snoremap <Left> bi
+snoremap <Right> a
+snoremap <BS> b<BS>
+snoremap <silent> <S-Tab> i<Right>=BackwardsSnippet()
+nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
+map <F7> :r!xclip -o
+vmap <F6> "*y
+nmap <F6> :w !xclip
+omap <F6> :w !xclip
+map <S-Insert> <MiddleMouse>
+inoremap <silent> 	 =TriggerSnippet()
+inoremap <silent> 	 =ShowAvailableSnips()
+let &cpo=s:cpo_save
+unlet s:cpo_save
+set backspace=indent,eol,start
+set backup
+set backupdir=~/vim_backup/
+set confirm
+set expandtab
+set fileencodings=ucs-bom,utf-8,default,latin1
+set guioptions=aegimtT
+set helplang=en
+set hidden
+set history=50
+set hlsearch
+set ignorecase
+set incsearch
+set laststatus=2
+set mouse=v
+set printoptions=paper:letter
+set ruler
+set runtimepath=~/.vim,~/.vim/bundle/FuzzyFinder,~/.vim/bundle/asyncfinder.vim-master,~/.vim/bundle/l9,~/.vim/bundle/matchit,~/.vim/bundle/nerdtree,~/.vim/bundle/snipmate,~/.vim/bundle/vim-fugitive,/var/lib/vim/addons,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/var/lib/vim/addons/after,~/.vim/bundle/snipmate/after,~/.vim/after
+set scrolloff=4
+set shiftwidth=4
+set showfulltag
+set smartcase
+set smarttab
+set softtabstop=4
+set statusline=[%n]\ %<%f%m\ \ \ %y\ \ \ %{''.(&fenc!=''?&fenc:&enc).''}\ \ \ %{&ff}\ %{fugitive#statusline()}\ \ \ col:%03c\ [line:\ %l/%L]
+set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
+set termencoding=utf-8
+set viminfo='20,\"500
+set whichwrap=<,>,b,s,h,l
+set wildignore=*.o,*.obj,*.bak,*.exe,*.py[co],*.swp,*~,*.pyc,.svn
+set wildmenu
+set window=36
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let v:this_session=expand("<sfile>:p")
+silent only
+cd ~/puzzles/jackies_questions/get_shortest_substring
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+set shortmess=aoO
+badd +0 substring.py
+badd +0 unit_test.py
+args substring.py unit_test.py
+edit substring.py
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+setlocal keymap=
+setlocal noarabic
+setlocal autoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+set colorcolumn=80,81,82,83,84,85
+setlocal colorcolumn=80,81,82,83,84,85
+setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:XCOMM,n:>,fb:-
+setlocal commentstring=#%s
+setlocal complete=.,w,b,u,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'python'
+setlocal filetype=python
+endif
+setlocal foldcolumn=0
+set nofoldenable
+setlocal nofoldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+set foldmethod=syntax
+setlocal foldmethod=syntax
+setlocal foldminlines=1
+set foldnestmax=10
+setlocal foldnestmax=10
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=tcq
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=2
+setlocal imsearch=2
+setlocal include=^\\s*\\(from\\|import\\)
+setlocal includeexpr=substitute(v:fname,'\\.','/','g')
+setlocal indentexpr=GetPythonIndent(v:lnum)
+setlocal indentkeys=0{,0},:,!^F,o,O,e,<:>,=elif,=except
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255
+setlocal keywordprg=pydoc
+set linebreak
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+set number
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=pythoncomplete#Complete
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=4
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=.py
+setlocal swapfile
+setlocal synmaxcol=3000
+if &syntax != 'python'
+setlocal syntax=python
+endif
+setlocal tabstop=8
+setlocal tags=~/puzzles/.git/python.tags,~/puzzles/.git/tags,./tags,./TAGS,tags,TAGS
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+let s:l = 2 - ((1 * winheight(0) + 18) / 36)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+2
+normal! 01l
+tabedit unit_test.py
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+edit unit_test.py
+setlocal keymap=
+setlocal noarabic
+setlocal autoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+set colorcolumn=80,81,82,83,84,85
+setlocal colorcolumn=80,81,82,83,84,85
+setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:XCOMM,n:>,fb:-
+setlocal commentstring=#%s
+setlocal complete=.,w,b,u,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'python'
+setlocal filetype=python
+endif
+setlocal foldcolumn=0
+set nofoldenable
+setlocal nofoldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+set foldmethod=syntax
+setlocal foldmethod=syntax
+setlocal foldminlines=1
+set foldnestmax=10
+setlocal foldnestmax=10
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=tcq
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=2
+setlocal imsearch=2
+setlocal include=^\\s*\\(from\\|import\\)
+setlocal includeexpr=substitute(v:fname,'\\.','/','g')
+setlocal indentexpr=GetPythonIndent(v:lnum)
+setlocal indentkeys=0{,0},:,!^F,o,O,e,<:>,=elif,=except
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255
+setlocal keywordprg=pydoc
+set linebreak
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+set number
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=pythoncomplete#Complete
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=4
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=.py
+setlocal swapfile
+setlocal synmaxcol=3000
+if &syntax != 'python'
+setlocal syntax=python
+endif
+setlocal tabstop=8
+setlocal tags=~/puzzles/.git/python.tags,~/puzzles/.git/tags,./tags,./TAGS,tags,TAGS
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+let s:l = 12 - ((11 * winheight(0) + 17) / 35)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+12
+normal! 064l
+tabnext 2
+if exists('s:wipebuf')
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20 shortmess=filnxtToO
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if file_readable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

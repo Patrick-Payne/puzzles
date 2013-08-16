@@ -1,85 +1,73 @@
-Interview Questions
-======================
+Interview Questions ======================
 
-Contextlogic
--------------------
-Given a string, and two chars (a and b), find the smallest substring that contains both a and b
+Contextlogic -------------------
+Given a string, and two chars (a and b), find
+the smallest substring that contains both a and b
 - How can this scale if you are given more than two chars?
 
-Given a list of positive integers, A, and a number, n, find a subset of A that sum up to n, or claim that none exist.
+Given a list of positive integers, A, and a number, n, find a subset of A that
+sum up to n, or claim that none exist.
 
 
-LinkedIn
--------------------
-Given two lists, write a function to take the intersection of the two lists.
+LinkedIn -------------------
+Given two lists, write a function to take the
+intersection of the two lists.
 - What if one list was significantly larger than the other?
 
-Given a binary tree, write a function to mirror it. (ie. What the tree would look like through a mirror)
+Given a binary tree, write a function to mirror it. (ie. What the tree would
+look like through a mirror)
 
-Given a chromosome (sequence of chars in {a,c,g,t}), find all subsequence of length 10 that is repeated more than once.
+Given a chromosome (sequence of chars in {a,c,g,t}), find all subsequence of
+length 10 that is repeated more than once.
 
 
-Bloomberg
--------------------
+Bloomberg -------------------
 Implement a stack
 - write a function that returns the max of the stack in O(1)
 
 Reverse a string.
 
-Given a sequence of numbers that represent stock prices over time, write a function to determine what is the maximum profit you can make.
+Given a sequence of numbers that represent stock prices over time, write a
+function to determine what is the maximum profit you can make.
 
 
-Google
---------------------
-Given a tree, print out all nodes.
-Given the list that you printed out, construct the tree back (modify the first function if you want)
+Google --------------------
+Given a tree, print out all nodes.  Given the list
+that you printed out, construct the tree back (modify the first function if you
+want)
 
-Given two lists that represent an integer, write a function to add the two numbers. ([1,2,3] + [4,5] = [1,6,8])
+Given two lists that represent an integer, write a function to add the two
+numbers. ([1,2,3] + [4,5] = [1,6,8])
 
 How would you implement a set ADT?
  - insert, delete, get_random_element
 
 
-Dropbox
---------------------
-Given a folder, find a list of all duplicate files in that directory (recursively)
+Dropbox --------------------
+Given a folder, find a list of all duplicate files
+in that directory (recursively)
 
-Write the function crawl(String start, int n), that returns a list of pages that can be reached from start in <= n steps
-Given:
-    get_url(url) -> returns String HTML
-    get_links(html) -> list of urls linked to
-What if you are only able to visit a page at most once?
+Write the function crawl(String start, int n), that returns a list of pages
+that can be reached from start in <= n steps Given: get_url(url) -> returns
+String HTML get_links(html) -> list of urls linked to What if you are only able
+to visit a page at most once?
 
-Given a phone number (ie. 123-4567), and a text file containg all english words, return a list of 7-letter words that can be formed using that phone number. (ie. 2 maps to ABC, 3 maps to DEF, etc)
-What if you were to support not only 7 letter words, but a concatentation of shorter words to make 7 letters in total? 
-(ie. RACE CAR)
+Given a phone number (ie. 123-4567), and a text file containg all english
+words, return a list of 7-letter words that can be formed using that phone
+number. (ie. 2 maps to ABC, 3 maps to DEF, etc) What if you were to support not
+only 7 letter words, but a concatentation of shorter words to make 7 letters in
+total?  (ie. RACE CAR)
 
 
- Hulu
- -------------------
- Write an AI program for hangman.
+ Hulu -------------------
+Write an AI program for hangman.
 
  Given an xml, with a Tokenizer and a Token Object, construct a tree of Nodes.
 
- ie. xml
- <a>
-    <b>
-        <c>foo</c>
-        sometext
-        <c>bar</c>
-    </b>
-    <d>blah</d>
-    moretext
-</a>
+ ie. xml <a> <b> <c>foo</c> sometext <c>bar</c> </b> <d>blah</d> moretext </a>
 
-Node
-    name        // ie. a
-    TEXT        // ie. foo
-    list<Node> children
+Node name        // ie. a TEXT        // ie. foo list<Node> children
 
-Tokenizer
-    get_token()
+Tokenizer get_token()
 
-Token
-    type    //BEGIN, TEXT, END
-    value
+Token type    //BEGIN, TEXT, END value
