@@ -1,0 +1,54 @@
+Digital Logic:
+============
+specific:
+- Creating a digital logic circuit that would describe a signal that was periodic.
+- Build a digital circuit that outputs '1' when input is fed with 256 or more consecutive '1's
+- 3-bit Gray counter using D flip-flops
+- Draw the Hardware architecture for priority encoder
+- Use adders and multipliers to implement y = ax^2 + bx + c
+	- Do this again using only 1 multiplier and 1 adder
+- JK flip-flop
+	- what is its response time called?
+- How do you implement XOR with a MUX?
+- DRAM SRAM memory
+- Implement a basic circuit for read/write GPIO.
+
+general:
+- TIMING ANALYSIS OF CIRCUIT
+- What does this circuit do?
+- design a circuit with input signal X and output signal Y
+- synthesizing counters
+
+Software:
+=========
+- Seperate valid words in a string given a dictionary.
+- find a missing element in array B compare to array A.
+- Given an array of integers and integers x and sum, find if the integer
+  (sum - x) is in the array.
+- find length of largest increasing sequence of numbers in an array.
+- determine of two arrays of strings are identical
+- Search for a substring within a string.
+
+Data structure specific:
+- Linked lists:
+  - Reverse a linked list in C/C++
+  - How to implement a linked list to make it space-efficient
+  - Delete an item in a singly-linked list
+
+- Binary Tree:
+  - Write a function for a binary tree which prints all the values stored in
+    the nodes
+	- print binary search tree in order
+
+- Graph:
+  - Find critical path in a graph.
+  - Given a graph, how do you find the shortest distance between two points
+    and longest distance between two points.
+
+general / high level:
+- How would you implement a snakes and ladders game?
+
+
+RANDOM:
+- How does a cell phone work?
+- How many jellybeans will fit in a 747?
