@@ -28,6 +28,7 @@ Software:
 - find length of largest increasing sequence of numbers in an array.
 - determine of two arrays of strings are identical
 - Search for a substring within a string.
+- Second highest number in an array.
 
 Data structure specific:
 - Linked lists:
