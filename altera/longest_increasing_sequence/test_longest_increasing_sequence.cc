@@ -35,7 +35,7 @@ TEST(BasicFunctionality, LongerLists) {
 
   test_list[1] = 10;
   test_list[2] = 10;
-  EXPECT_EQ(2, LongestIncreasingSequence(test_list, 4));
+  EXPECT_EQ(1, LongestIncreasingSequence(test_list, 4));
 
 
   // Test this algorithm for a case where we have multiple possible sequences.

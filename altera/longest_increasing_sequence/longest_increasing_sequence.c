@@ -20,5 +20,29 @@
  *  @return The length of the longest increasing sequence in list.
  */
 int LongestIncreasingSequence(int *list, int length) {
-  return 0;
+  int longest_streak = 1;
+  int current_streak = 1;
+
+  // Handle the edge case where length is zero.
+  if (length == 0) {
+    return 0;
+  }
+
+  for (int i = 1; i < length; i++) {
+    if (list[i] > list[i-1]) {
+      current_streak++;
+    } else {
+      if (longest_streak < current_streak) {
+        longest_streak = current_streak;
+      }
+      current_streak = 1;
+    }
+  } /* for */
+
+  // Handle the edge case where the longest streak is at the end of the list.
+  if (longest_streak < current_streak) {
+    longest_streak = current_streak;
+  }
+
+  return longest_streak;
 }
