@@ -2,6 +2,10 @@
 
 # C extensions
 *.so
+*.o
+*.a
+*.out
+*~
 
 # Packages
 *.egg
