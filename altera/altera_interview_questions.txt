@@ -1,14 +1,14 @@
 Digital Logic:
 ============
 specific:
-- Creating a digital logic circuit that would describe a signal that was periodic.
+- Create a digital circuit that would describe a signal that was periodic.
 - Build a digital circuit that outputs '1' when input is fed with 256 or more consecutive '1's
+- Create a circuit that has a high output for 2 consecutive clock ticks out of
+  50 total clock ticks.
 - 3-bit Gray counter using D flip-flops
 - Draw the Hardware architecture for priority encoder
 - Use adders and multipliers to implement y = ax^2 + bx + c
 	- Do this again using only 1 multiplier and 1 adder
-- JK flip-flop
-	- what is its response time called?
 - How do you implement XOR with a MUX?
 - DRAM SRAM memory
 - Implement a basic circuit for read/write GPIO.
@@ -29,6 +29,7 @@ Software:
 - determine of two arrays of strings are identical
 - Search for a substring within a string.
 - Second highest number in an array.
+- Third highest number in an array.
 
 Data structure specific:
 - Linked lists:
@@ -39,7 +40,7 @@ Data structure specific:
 - Binary Tree:
   - Write a function for a binary tree which prints all the values stored in
     the nodes
-	- print binary search tree in order
+    - print binary search tree in order
 
 - Graph:
   - Find critical path in a graph.
