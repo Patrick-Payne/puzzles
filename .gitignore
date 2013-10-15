@@ -40,3 +40,26 @@ nosetests.xml
 
 # Vim swap files
 *.swp
+
+# NIOSII stuff
+*.ncf
+nios_macros.s
+BSP/
+Makefile
+*.map
+obj/
+*.objdump
+
+# Junk files produced by quartus.
+*.q[sp]f
+*.qws
+incremental_db/
+db/
+output_files/
+simulation/
+
+
+# Other Junk
+*.swp
+*.bak
+*.temp
