@@ -9,6 +9,11 @@
 #include "city_fill.h"
 
 /******************************************************************************
+ * MACRO DEFINITIONS:
+ *****************************************************************************/ 
+#define MIN(x, y) (((x) <= (y)) ? (x) : (y))
+
+/******************************************************************************
  * PUBLIC FUNCTION DEFINITIONS:
  *****************************************************************************/ 
 
@@ -18,8 +23,33 @@
  *  @param size The number of slots the city occupies.
  *  @return The number of units of floodwater accumulated.
  */
-int FloodVolume (int *list, int size) {
-  return 1;
+int FloodVolume(int *list, int size) {
+  int total_volume = 0;
+
+  // Get the indices that mark the first basin water will accumulate in.
+  int left_index = GetNextStartIndex(list, size, 0);
+  int right_index = GetNextEndIndex(list, size, left_index);
+
+  while ((left_index != INVALID_INDEX) && (right_index != INVALID_INDEX)) {
+    // The basin will fill with water up to the height of the shorter of the
+    // two endpoints of the basin.
+    int fill_height = MIN(list[left_index], list[right_index]);
+
+    // Find the volume of the current basin.
+    int current_volume = 0;
+    for (int i = left_index + 1; i < right_index; i++) {
+      if (list[i] < fill_height) {
+        current_volume += fill_height - list[i];
+      }
+    }
+    total_volume += current_volume;
+
+    // Go to the next basin, if one exists.
+    left_index = GetNextStartIndex(list, size, right_index);
+    right_index = GetNextEndIndex(list, size, left_index);
+  }
+
+  return total_volume;
 }
 
 
@@ -31,7 +61,22 @@ int FloodVolume (int *list, int size) {
  *  @return The index of the next starting edge, INVALID_INDEX if none exist.
  */
 int GetNextStartIndex(int *list, int size, int start) {
-  return 1;
+  // If an invalid index is set for start, just return INVALID_INDEX.
+  if (start == INVALID_INDEX) {
+    return INVALID_INDEX;
+  }
+
+  int index = start;
+  while ((index < size) && (list[index] <= list[index + 1])) {
+    index++;
+  }
+
+  // We cannot start a basin on the right edge of the city.
+  if (index >= size - 1) {
+    return INVALID_INDEX;
+  } else {
+    return index;
+  }
 }
 
 
@@ -43,5 +88,23 @@ int GetNextStartIndex(int *list, int size, int start) {
  *  @return The index of the ending edge, INVALID_INDEX if none exist.
  */
 int GetNextEndIndex(int *list, int size, int start) {
-  return 1;
+  if (start == INVALID_INDEX) {
+    return INVALID_INDEX;
+  }
+  int index = start + 1;
+
+  while (index < size -1) {
+    if ((list[index] > list[index - 1]) && (list[index] >= list[index + 1])) {
+      return index;
+    } else {
+      index++;
+    }
+  }
+
+  // Check the edge case where we hit the last index without finding an end.
+  if ((index < size) && (list[index] > list[index - 1])) {
+    return index;
+  } else {
+    return INVALID_INDEX;
+  }
 }

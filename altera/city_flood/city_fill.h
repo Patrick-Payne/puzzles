@@ -22,7 +22,7 @@
  *****************************************************************************/ 
 
 /*! @brief A sentinal value used to indicate that no such index exists. */
-#define INVALID_INDEX = -1
+#define INVALID_INDEX -1
 
 /******************************************************************************
  * PUBLIC FUNCTION DECLARATIONS:
@@ -34,7 +34,7 @@
  *  @param size The number of slots the city occupies.
  *  @return The number of units of floodwater accumulated.
  */
-int FloodVolume (int *list, int size);
+int FloodVolume(int *list, int size);
 
 
 /*! @brief Determines the starting end of the next water accumulation region
