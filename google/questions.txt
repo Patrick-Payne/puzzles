@@ -1,0 +1,7 @@
+- Find the mode of a binary search tree.
+- Find the median of a binary search tree.
+- Find the median of a very large array.
+- Given an array of length n+1 filled with the numbers 1-n, and a single blank
+  space in the array, how do you put the array into the sequence 
+  1, 2, 3, ...,n where the only operation allowed is to move a box into the
+  vacant spot?
