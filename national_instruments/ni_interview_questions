@@ -1,0 +1,61 @@
+Coding Questions:
+- How would you shuffle a deck of 52 cards (i.e. shuffle an array).
+- Bit masking and field accessing etc.
+- Determine the number of points in an X-Y axis plot that are within radius of
+  R from point P.
+
+- Write a program that prints the numbers from 1 to 100. But for multiples of
+  three print “Fizz” instead of the number and for the multiples of five print
+  “Buzz”. For numbers which are multiples of both three and five print
+  “FizzBuzz”.
+
+- How would you use a single down-counter, with very high resolution and quick
+  access/set times, in software to time an arbitrary number of items?
+
+- Binary Tree:
+  - Find a specific node in a binary tree (not necessarily search tree), return
+    its depth.
+  - Find the average of a binary tree.
+  - Reverse a binary tree.
+    - both in place and in new memory. Advantages of either scheme?
+  - Each node's value is a color. A clump is formed with more than 3 items
+    with the same color are adjacent to each other. Return the number of
+    clumps in a binary tree.
+
+- linked lists:
+  - make a deep copy of a linked list.
+  - recursively and non-recursively reverse a linked list.
+  - Given two singly linked lists, with hte first node being the most
+    significant digit of a number and the last being the least, find their
+    difference in O(n) time without reversing the lists.
+
+PUZZLES:
+- There are 5 people and each one hit a stump with a ball twice. Probability
+  of each one hitting it is P, then how many people hit the stump with both
+  their chances on average?
+-
+
+Systems:
+- Design an Air conditioner controller
+- How would you measure the temperature in a room and display the result?
+- Draw a block diagram of a PC architecture and explain where and how the buses
+  interact with the chipsets.
+- How would you implement a text editor?
+- How would you implement a calculator?
+- Given a laptop with a mic plug, draw a block diagram of what you would need
+  to record our conversation and store it on a USB stick.
+- Software UART
+
+Behavioral Questions:
+- Tell me about...
+  - A time you went out of your way to help someone.
+  - A time you carried a project from scratch to completion.
+  - A time you took initiative.
+  - You solved a complex problem in a project/work/home.
+  - Your most memorable and challenging bug so far, and how you solved it.
+
+- What is your approach to debugging a program.
+- What is the project you are most proud of?
+- Why do you want to work for National Instruments?
+- Tell us about your previous internship and the project you worked on.
+
