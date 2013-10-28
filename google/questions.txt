@@ -5,3 +5,52 @@
   space in the array, how do you put the array into the sequence 
   1, 2, 3, ...,n where the only operation allowed is to move a box into the
   vacant spot?
+
+- You have an array of points (x, y), find a line that passes through the
+  the largest number of points.
+- Find the set of duplicates in an array
+- Given an integer, return the letters forming the microsoft excel column.
+
+- find the maximum length continuous sequence of zeros in the binary
+  representation of a number.
+- Given 4 numbers, find the permutation of these numbers such that
+  abs(A0 - A1) + abs(A1 - A2) + abs(A2 - A3) is maximized. Use O(1) space
+  and time.
+
+- In a language, there are only 4 characters: 'h', 'i', 'r', 'e'. A word
+  is valid if it is of the form h^n i^n r^n e^n, disregarding order.
+  create a routine that determines if a string is valid.
+
+- determine if a number is a power of 4 in O(loglogn)
+
+- Given a sorted 2D N x N array (where array[i][j] < array[i][j+1] and
+  array[i][j] < array[i+1][j]), can you write a function that converts
+  this to a sorted 1D array? 
+
+- Find the median of an unsorted array.
+
+- calculate (x^y)%z without pow()
+- Create a set of all anagrams given a dictionary of words.
+- Given a list of millions of words, return the largest and smallest
+  words typable with only the left hand. Do the same for the right hand.
+
+graph:
+- You are given a grid, with points on the intersections. Write code to
+  calculate the point on the grid that is the shortest distance from
+  every point on the grid.
+
+
+- Binary Tree:
+   - Find the closest element in a binary tree.
+   - Check if a binary tree is a BST.
+   - find diameter of a tree
+   - Merge two balanced BSTs into one larger balanced BST.
+
+
+Math:
+- Consider a hash table with M slots. Suppose hash value is uniformly
+  distributed between 1 to M, and it uses linked list to handle conflicts
+  (if two keys hashed to the same slot). Suppose we put N keys into this
+  M-slotted hash table, what is the probability that there will be a slot
+  with i elements? i could vary from 0 to N.
+
