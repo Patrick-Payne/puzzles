@@ -1,0 +1,72 @@
+programming:
+- Given a number N and an array Arr[], search for two numbers which sum up
+  to the number N.
+- Find whether there is a loop in a linked list or not.
+  - Prove using graph theory?
+- You are given an array of size N containing negative and positive real
+  numbers. Zero may or may not be present. Rearrange the array using O(N)
+  time and O(1) space so that all negative numbers come before all positive
+  numbers.
+- Given a monotonically sorted 2D array, create an algorithm to search for
+  a given input element. A monotonically sorted array is one in which each
+  row and column has elements in ascending order, e.g.
+  [1, 2, 10; 4, 6, 11; 5, 7, 12;]
+
+- Given an integer N, print 0....(N^2 - 1) in spiral form, e.g.:
+32     4 3 2    15 14 13 12
+01     5 0 1     4  3  2 11
+       6 7 8     5  0  1 10
+                 6  7  8  9
+
+- Write a program to find out if a binary tree is balanced or not.
+- Find the height of a tree.
+
+- Calculate N!, both iteratively and recursively.
+- Given a pointer to a node in a linked list, return the nth node away from
+  that node.
+
+- Sort three numbers without inserting them onto an array.
+    - Extend this solution to 4 numbers.
+
+- Given an array of numbers, divide the numbers into 2 sets, such that the
+  difference between the sum of numbers in the two sets is minimized.
+   - This problem is NP. generate a solution O(kn) where k is the max
+     element in the array.
+
+- Given a random function that generates a random number between 1 and 5
+  inclusive, write a function to generate a random number between 1 and 7
+  inclusive.
+
+- Given a matrix of integers where every row is sorted and every column is
+  sorted, print the elements in sorted order (O(n^2 logn))
+
+- Given an array of positive integers, convert it into a sorted array with
+  minimum cost. valid operations: decrement an element (cost 1), or delete
+  the element (cost = value of element).
+  e.g. 4, 3, 5, 6 -> delete 4, cost 1
+
+
+
+Puzzles:
+- There are 15 black and 5 white balls. Find the probability of drawing
+  3 balls so that there is no white ball.
+
+general knowledge:
+- Heap vs. Stack
+- Why pass by reference instead of pass by value?
+- What is the use of command line arguments on software development?
+
+
+Stuff I don't know yet:
+- Difference between process and threads
+- dynamic programming
+
+
+
+Behavioral:
+- What is the most difficult situation that have been in and how did
+  you deal with it?
+- What are your best 3 strengths, worst 3 weaknesses.
+- How would you describe a leader?
+- How do you handle conflicts?
+
