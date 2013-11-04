@@ -1,6 +1,3 @@
-- Find the mode of a binary search tree.
-- Find the median of a binary search tree.
-- Find the median of a very large array.
 - Given an array of length n+1 filled with the numbers 1-n, and a single blank
   space in the array, how do you put the array into the sequence 
   1, 2, 3, ...,n where the only operation allowed is to move a box into the
@@ -8,11 +5,14 @@
 
 - You have an array of points (x, y), find a line that passes through the
   the largest number of points.
+
 - Find the set of duplicates in an array
+
 - Given an integer, return the letters forming the microsoft excel column.
 
 - find the maximum length continuous sequence of zeros in the binary
   representation of a number.
+
 - Given 4 numbers, find the permutation of these numbers such that
   abs(A0 - A1) + abs(A1 - A2) + abs(A2 - A3) is maximized. Use O(1) space
   and time.
@@ -30,22 +30,26 @@
 - Find the median of an unsorted array.
 
 - calculate (x^y)%z without pow()
+
 - Create a set of all anagrams given a dictionary of words.
+
 - Given a list of millions of words, return the largest and smallest
   words typable with only the left hand. Do the same for the right hand.
+
+- Find the median of a very large array.
 
 graph:
 - You are given a grid, with points on the intersections. Write code to
   calculate the point on the grid that is the shortest distance from
   every point on the grid.
 
-
 - Binary Tree:
-   - Find the closest element in a binary tree.
-   - Check if a binary tree is a BST.
-   - find diameter of a tree
-   - Merge two balanced BSTs into one larger balanced BST.
-
+  - Find the closest element in a binary tree.
+  - Check if a binary tree is a BST.
+  - find diameter of a tree
+  - Merge two balanced BSTs into one larger balanced BST.
+  - Find the mode of a binary search tree.
+  - Find the median of a binary search tree.
 
 Math:
 - Consider a hash table with M slots. Suppose hash value is uniformly
