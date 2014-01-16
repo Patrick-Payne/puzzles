@@ -44,6 +44,12 @@ TEST(TestHelpers, GetNextEndIndex) {
 
   // If we start at an invalid index, just return INVALID_INDEX.
   EXPECT_EQ(INVALID_INDEX, GetNextEndIndex(test_city, 8, INVALID_INDEX));
+
+  // Test the case where the end of the current basin is not where we first
+  // stop increasing.
+  int test_city2[] = {1, 0, 2, 3, 3, 3, 4, 0};
+  EXPECT_EQ(6, GetNextEndIndex(test_city2, 8, 0));
+
 }
 
 /******************************************************************************

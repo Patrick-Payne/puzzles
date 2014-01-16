@@ -93,9 +93,15 @@ int GetNextEndIndex(int *list, int size, int start) {
   }
   int index = start + 1;
 
-  while (index < size -1) {
+  while (index < size - 1) {
     if ((list[index] > list[index - 1]) && (list[index] >= list[index + 1])) {
+      // Rule out the possibility that this is just a temporary plateau.
+      while ((index < size - 1) && (list[index] == list[index + 1])) {
+        index++;
+      }
+      if (list[index] > list[index + 1]) {
       return index;
+      }
     } else {
       index++;
     }
