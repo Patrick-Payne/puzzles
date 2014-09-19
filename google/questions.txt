@@ -2,6 +2,7 @@
   space in the array, how do you put the array into the sequence 
   1, 2, 3, ...,n where the only operation allowed is to move a box into the
   vacant spot?
+  - Done in put_boxes_in_order.py
 
 - You have an array of points (x, y), find a line that passes through the
   the largest number of points.

@@ -1,0 +1,151 @@
+basic stuff:
+- Derive prime numbers efficiently
+- Find a circular loop in a linked list
+- Given an array with N - 2 elements (two missing) from 1 to N, find the two
+  missing elements in linear time and constant memory usage.
+    - Done in find_two_missing.py
+- Given integer, list all primes preceding it.
+- print all permutations of a string of characters, without printing duplicates.
+
+- Design a parking lot system where you need to provide a token with the
+  parking space number on it to each new entry for hte space closest to the
+  entrance. When someone leaves you need to update this space as empty.
+  What data structures will you use to perform the closest empty space
+  tracking, plus finding if a space is occupide at a given time?
+
+- find the median of a stream of flowing numbers (i.e. online) (done)
+
+- Given two arrays, words and chars, return the longest word that can be
+  constructed from the provided characters without reusing chars.
+- How will you sort 1 billion integers stored in an array?
+- Having two distinct VERY LARGE ordered arrays of values, find the mean value
+ (not median) of the two arrays.
+
+- Given two trees, find if tree 2 is the mirror image of tree 1.
+
+- Implement a synchronized queue for multiple threads, avoiding race conditions
+  and deadlocks.
+
+- Explain b tree and its applications
+  - in Linux?
+
+- Which sorting algo would you implement as a unix library and why?
+  - I'm pretty sure they use mergesort. Easiest to split, and easier to manage
+    fact that we are sorting on disk?
+
+- Compare heap sort vs quick sort, worst case, avg case, best case
+  - heap sort vs merge sort
+
+- Solve the producer/consumer problem using a circular buffer.
+- Big O for insertions, deletions, and find operations in a hash table?
+  - binary tree?
+
+- explain dynamic binding
+- automatic reference counting
+
+- Given two lists, list A with size N, and list B with size M, write an
+  algorithm to find all the items that in both list A and list B.
+  - M <<<<< N
+  - M < N
+  - M = N
+
+- suppose you have a lion class, and you implemented a draw() function that
+  draws the entire body of the lion. Now suppose you want to make a Tiger class
+  and the tiger is like a lion, but it doesn't have a mane and has stripes.
+  How would you do this?
+
+- Given an array of ints, is it possible to divide the ints into two groups,
+  so that the sums of the two groups  are the same? Use recursion.
+
+- calculate the area of a polygon using the triangulation method
+- explain the mark and sweep algorithm.
+C specific:
+- Write a function char * CreateEmptyString(int len); that returns a
+  pointer to an empty string of length len
+- Write a C function to remove all spaces from a string.
+  - What is the space and time efficiency of your solution?
+- implement atoi()
+  - Now implement htoi()
+- reverse a string in place
+
+
+C++ specific:
+- What is const correctness?
+- What is the mutable keyword in C++
+- What is the difference between and list and a vector?
+- Design an iterator over a LinkedList of LinkedLists
+- implement an iterator for a binary search tree that will iterate the nodes
+  by value in ascending order.
+- implement a function that finds the starting index of a substring in a string.
+- implement a stack based linked list for generic objects in C++ (template)
+- What is the main reason for using pass by reference instead of pass by
+  pointer?
+- What is the difference between an STL array type and a C++ array?
+
+
+OS stuff:
+- Create a synchronization primitive for the kernel from scratch.
+  - Do this again without wasting CPU cycles.
+  - Basically, known how synchronization schemes are implemented.
+- How would you implement a threading model for handling network, filesystem,
+  UI system, etc. as a user-space framework in a very limited resource
+  environment?
+- How would you test an IOS simulator? How would you test an android simulator?
+- How would you implement a memory leak analyzer in the kernel?
+- Where are the stack and heap located? How would you write a c program to tell
+  if the stack frame was growing?
+- What is a deadlock? Can you give a real world example?
+- How do you detect a deadlock condition?
+
+
+systems design:
+- model an elevator
+- Design an email system
+- Design a basic chess game.
+  - What are the main objects:
+  - How do the main objects interact with each other?
+  - Which object or objects own the current game state info?
+  - Implement the method to move a piece to another position on the board.
+  - How do you test the move piece method?
+
+- Design a tic tac toe game.
+
+UNIX stuff:
+- explain some of the text encoding types and advantages/disadvantages of each.
+- If your browser crashes, how would you debug it using only the command line?
+- How would you create a stack backtrace in assembly?
+- In regular expressions, what is the meaning of hte +, * and ? operators?
+- How would you kill a process by name in the terminal in one line?
+  - i.e NOT kill -9 pid.
+  - what happens when you type kill pid, kill processname
+
+Probability/Combinatorics:
+- There are 3 ants at 3 corners of an equilateral triangle. They randomly
+  start moving towards another corner. what is the probability that they do
+  not collide?
+  - Follow up: Suppose if all ants go in the same direction (ant 1 A->B, ant
+    2 B->C, ant 3 C->A), When will they collide.  
+
+- How many strings exist of the following form
+  1) Only characters from 'a' to 'z' are allowed
+  2) NO character is repeated
+  3) length = 10
+  4) One and only one character in the string is lexicographically greater than
+     the previous chracter
+
+Puzzles:
+- You have 100 coins lying flat on a table, each with a head side and a tail
+  side. 10 of them are heads up, 90 are tails up. You can't feel, see or in
+  any other way found out which side is up. Split the coins into two piles
+  such that there are the same number of heads in each pile.
+
+behavioural:
+- Why do you want to work here?
+- What was an interesting problem, and how did you debug/solve it?
+- Tell me something about your former internship?
+  - What did you learn on your previous internships?
+- what courses are you planning on taking next year
+- What are some languages that you are proficient in?
+- How do you go about learning a new language?
+- Favourite class and professor?
+
