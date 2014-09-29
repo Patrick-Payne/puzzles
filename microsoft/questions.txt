@@ -1,0 +1,58 @@
+Knowledge:
+- What is the difference between...
+  - a crash and an exception?
+  - a macro and inline function?
+  - late and early binding?
+
+
+Programming:
+- Check if a given sudoku is fully solved.
+  - Sudoku solver?
+- delete all duplicate numbers in an array.
+- Reverse the words in a string manually (i.e. without using string.split().
+- Write a function that takes a seven-digit telephone number and prints out
+  all of the possible words or combinations of letters that can represent a
+  given number.
+- A rat, who can move forward and turn, is in a maze. help it escape.
+- Print the numbers 1..n^2 in a spiral, with 1 in the centre and going outward.
+- Print the permutations of a C string.
+- Replace a character in a string with another one, or another two.
+- Find the longest palindrome in a string.
+- There is an array of size 50 that is expected to contain all the number from
+  1 to 50. But, there is one number missing. Find this missing # in O(n), and
+  the extra number if:
+  1) If the duplicate number is between 1..50
+  2) If the extra number is greater than 50
+
+Linked List:
+- Reverse a linked list.
+  - Sort a linked list using recursion only.
+  - Split a linked-list into elements above and below the average on the list.
+  - Write a function to reconstruct a chain of linked-list nodes that have been
+    severed. Each node is missing the link to the node that it's supposed to
+    point to, but contains the value of the node that points to it (prev).
+
+BST:
+  - Write an algorithm to find the lowest common ancestor of two nodes in a BST.
+  - Write a function to delete a node from a binary search tree.
+  - Write a function that validates that a binary tree is a BST.
+  -
+
+Things I have no idea about:
+- ASCII table manipulation?
+- UML?
+- Networking stuff?
+
+
+Random design questions:
+- Design a phone book
+- explain MATLAB to your grandmother
+- 
+
+Riddles:
+- There are 8 marbles. All have equal weight, except for one that is heavier.
+  find the heaviest marble, using the scale at most 2 times.
+- You are in a building with N floors. How many 
+
+Random behavioural questions:
+- What is the most important benefit an employer can offer an employee?
