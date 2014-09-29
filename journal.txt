@@ -1,0 +1,5 @@
+Sat Sep 27 15:50:10 EDT 2014
+Mistakes made today:
+  - Misread question (return SET of duplicates, not just whether duplicates
+    exist).
+  - Always make sure to add newlines if needed in printf statements.
